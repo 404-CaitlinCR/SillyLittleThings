@@ -26,15 +26,16 @@ body{
 .bttn{
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: lightgreen;
-    border: 2px solid green;
+    background-color: rgb(144, 216, 238);
+    border: 2px solid rgb(111, 177, 197);
     cursor: pointer;
-    box-shadow: 4px 4px 0px darkgreen;
+    box-shadow: 4px 4px 0px rgb(58, 100, 112);
 }
 .bttn:hover{
-    background-color: green;
+    background-color: rgb(58, 100, 112);
+    color: white;
+    border: 2px solid rgb(42, 89, 100);
     transform: translate(2px, 2px); /* moves button slightly to create press effect */
-
 }
 #noBtn {
     position: relative;
