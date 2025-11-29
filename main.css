@@ -8,12 +8,13 @@ body{
 }
 
 .container{
-    text-align: center;
     padding: 50px;
     border-radius: 10px;
-    background-color: rgb(181, 145, 202);
+    background-color: rgba(181, 145, 202, 0.767);
+    text-align: center;
+    border: 2px solid rgb(151, 107, 180);
+    box-shadow: 10px 10px 0px rgb(127, 69, 194);
 }
-
 .container img{
     border-radius: 10px;
 }
