@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>For u </title>
+        <link rel="stylesheet" href="start.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Yay!! You like me!!</h1>
+            <p>I like you too!! 😊❤️</p>
+            <img src="./images/download.gif" alt="">
+            <div>
+                <button class="bttn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none">Click me for a surprise!</a></button>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti when page loads
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+        
+        // Or for continuous confetti bursts
+        const duration = 3 * 1000;
+        const end = Date.now() + duration;
+
+        (function frame() {
+            confetti({
+                particleCount: 2,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 }
+            });
+            confetti({
+                particleCount: 2,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 }
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    </script>
+</html>

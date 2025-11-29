@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(217, 173, 230);
+}
+.container{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(181, 145, 202, 0.767);
+    text-align: center;
+    border: 2px solid rgb(151, 107, 180);
+    box-shadow: 10px 10px 0px rgb(127, 69, 194);
+}
+.bttn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    border: 2px solid green;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px darkgreen;
+}
+
+.bttn:hover{
+    background-color: green;
+    transform: translate(2px, 2px); /* moves button slightly to create press effect */
+}
+
+img{
+    border-radius: 10px;
+}
